@@ -12,7 +12,7 @@ public class GraduateStudent extends Student{
         if (getAverage() < 70) {
             System.out.print("*");
         }
-        System.out.print("\t"+getAverage());
+        System.out.print("\t"+thesis);
         System.out.println();
     }
 }
