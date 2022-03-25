@@ -1,4 +1,4 @@
-package com.tom;
+package com.tom.sell;
 
 public class ConsumptionRecord {
     public static void main(String[] args) {

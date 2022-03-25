@@ -1,4 +1,4 @@
-package com.tom;
+package com.tom.sell;
 
 public class GoldCustomer extends Customer {
     float goldrebate=cost*2*off;

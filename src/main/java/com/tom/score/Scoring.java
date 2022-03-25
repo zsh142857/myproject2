@@ -1,6 +1,4 @@
-package com.tom;
-
-import java.util.Scanner;
+package com.tom.score;
 
 public class Scoring {
     public static void main(String[] args) {
