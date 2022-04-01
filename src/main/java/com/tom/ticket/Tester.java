@@ -4,38 +4,54 @@ import java.util.Scanner;
 
 public class Tester {
     public static void main(String[] args) {
-        Ticket ticket=new Ticket(
-                Station.TAIPEI_STATION,
-                Station.KAOHSIUNG_STATION);
         Scanner scanner = new Scanner(System.in);
         System.out.println("You start station?[1]Taipei, [2]Taichung, [3]KAOHSIUNG");
-        Station startStation=null;
+        Station start=null;
         int startChoice=Integer.parseInt(scanner.next());
         switch (startChoice){
             case 1:
-                startStation= Station.TAIPEI_STATION;
+                start= Station.TAIPEI_STATION;
                 break;
             case 2:
-                startStation= Station.TAICHUNG_STATION;
+                start= Station.TAICHUNG_STATION;
                 break;
             case 3:
-                startStation= Station.KAOHSIUNG_STATION;
+                start= Station.KAOHSIUNG_STATION;
                 break;
         }
         Scanner scanner2 = new Scanner(System.in);
         System.out.println("You destination station?[1]Taipei, [2]Taichung, [3]KAOHSIUNG");
-        Station destinationStation=null;
+        Station destination=null;
         int destinationChoice=Integer.parseInt(scanner2.next());
         switch (destinationChoice){
             case 1:
-                destinationStation= Station.TAIPEI_STATION;
+                destination= Station.TAIPEI_STATION;
                 break;
             case 2:
-                destinationStation= Station.TAICHUNG_STATION;
+                destination= Station.TAICHUNG_STATION;
                 break;
             case 3:
-                destinationStation= Station.KAOHSIUNG_STATION;
+                destination= Station.KAOHSIUNG_STATION;
                 break;
         }
+        Scanner scanner3 = new Scanner(System.in);
+        System.out.println("Which kind of ticket? [1]Student [2]Elder [3]Normal");
+        int choice=Integer.parseInt(scanner3.next());
+        Ticket ticket=null;
+        switch (choice){
+            case 1:
+                ticket=new StudentTicket(start,destination);
+                break;
+            case 2:
+                ticket=new ElderTicket(start,destination);
+                break;
+            case 3:
+                ticket=new Ticket(start,destination);
+                break;
+        }
+
+        ticket.print();
+
+
     }
 }

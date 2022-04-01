@@ -9,6 +9,7 @@ public class Customer {
         this.cost=cost;
     }
     public float getoff(){
+
         return (cost/1000)*off*1000;
     }
     public void print(){
