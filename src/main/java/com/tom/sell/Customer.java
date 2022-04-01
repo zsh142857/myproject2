@@ -14,7 +14,6 @@ public class Customer {
     }
     public void print(){
         System.out.println(number+"\t"+cost+"\t"+(cost-getoff()));
-        System.out.println();
     }
 
 }

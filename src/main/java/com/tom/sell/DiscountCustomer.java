@@ -8,6 +8,5 @@ public class DiscountCustomer extends Customer{
     @Override
     public void print(){
         System.out.println(number+"\t"+cost+"\t"+cost*9*off);
-        System.out.println();
     }
 }

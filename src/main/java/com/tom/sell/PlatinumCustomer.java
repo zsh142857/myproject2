@@ -8,6 +8,5 @@ public class PlatinumCustomer extends  Customer{
     @Override
     public void print(){
         System.out.println(number+"\t"+cost+"\t"+cost*7*off+"("+PlatinumBate+")");
-        System.out.println();
     }
 }

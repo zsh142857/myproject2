@@ -8,6 +8,5 @@ public class GoldCustomer extends Customer {
     @Override
     public void print(){
         System.out.println(number+"\t"+cost+"\t"+cost*8*off+"("+GoldRebate+")");
-        System.out.println();
     }
 }

@@ -8,6 +8,5 @@ public class SilverCustomer extends Customer {
     @Override
     public void print(){
         System.out.println(number+"\t"+cost+"\t"+(cost-getoff())+"("+rebate+")");
-        System.out.println();
     }
 }
