@@ -31,7 +31,7 @@ public class Ticket {
         }
     }
     public void print(){
-        System.out.println(start.name+"\t"+destination.name+"\t"+price);
+        System.out.println("Normal Ticket"+"\t"+start.name+"\t"+destination.name+"\t"+price);
     }
 
 }

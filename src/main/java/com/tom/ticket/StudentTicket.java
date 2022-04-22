@@ -6,4 +6,8 @@ public class StudentTicket extends Ticket{
         super(start,destination);
         price= price-(int)(price*2*off);
     }
+    @Override
+    public void print(){
+        System.out.println("Student Ticket"+"\t"+start.name+"\t"+destination.name+"\t"+price);
+    }
 }
