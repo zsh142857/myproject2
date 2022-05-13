@@ -1,9 +1,9 @@
 package com.tom.score;
 
-public class Student {
-    String name;
-    int english;
-    int math;
+public class Student implements Printable {
+    protected String name;
+    protected int english;
+    protected int math;
     public Student(String name) {
         this.name = name;
     }
